@@ -71,4 +71,4 @@ zero-riscy:
   commit: pulpinov1
 
 fpu:
-  commit: pulpinov1
+  commit: d748d3c389fedfb658ae9ee2a540f7eb122b7af9
