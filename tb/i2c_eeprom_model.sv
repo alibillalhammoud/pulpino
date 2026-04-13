@@ -18,8 +18,8 @@ endpackage
 
 module i2c_buf
   (
-    inout  logic        scl_io,
-    inout  logic        sda_io,
+    inout  tri        scl_io,
+    inout  tri        sda_io,
 
     output logic        scl_pad_i,
     input logic         scl_pad_o,
@@ -39,8 +39,8 @@ endmodule
 
 module i2c_model_phy
   (
-    inout  logic       scl_io,
-    inout  logic       sda_io,
+    inout  tri       scl_io,
+    inout  tri       sda_io,
 
     input  logic       rst_ni,
 
@@ -245,8 +245,8 @@ module i2c_eeprom_model
     parameter ADDRESS = 7'b010_1010
   )
   (
-    inout  logic scl_io,
-    inout  logic sda_io,
+    inout  tri scl_io,
+    inout  tri sda_io,
     input  logic rst_ni  // ideally this would be an internal POR
   );
 
