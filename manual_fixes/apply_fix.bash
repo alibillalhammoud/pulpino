@@ -5,13 +5,13 @@ SCRIPT_ABSOLUTE_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Source and destination files
 cp_files_from=(
-  "${SCRIPT_ABSOLUTE_PATH}/manual_fixes/riscv_cs_registers.sv"
-  "${SCRIPT_ABSOLUTE_PATH}/manual_fixes/riscv_decoder.sv"
+  "${SCRIPT_ABSOLUTE_PATH}/riscv_cs_registers.sv"
+  "${SCRIPT_ABSOLUTE_PATH}/riscv_decoder.sv"
 )
 
 cp_files_to=(
-  "${SCRIPT_ABSOLUTE_PATH}/ips/riscv/riscv_cs_registers.sv"
-  "${SCRIPT_ABSOLUTE_PATH}/ips/riscv/riscv_decoder.sv"
+  "${SCRIPT_ABSOLUTE_PATH}/../ips/riscv/riscv_cs_registers.sv"
+  "${SCRIPT_ABSOLUTE_PATH}/../ips/riscv/riscv_decoder.sv"
 )
 
 # Loop through files
